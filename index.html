@@ -18,6 +18,17 @@
       zoom: 12,
     style: 'mapbox://styles/kaorikowada/cjvej61ydbk8y1fqqrjaj5b73'
   });
+  // Navigation Control
+map.addControl(
+ new mapboxgl.NavigationControl(), 'top-left'
+);
+// Geolocation Control
+map.addControl(new mapboxgl.GeolocateControl({
+  positionOptions: {
+    enableHighAccuracy: true
+  },
+  trackUserLocation: true
+}));
 </script>
 
   </body>
